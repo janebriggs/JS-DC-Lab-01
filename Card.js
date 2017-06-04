@@ -9,6 +9,7 @@ class Card {
         this.suit = suit
         this.rank = rank
         this.score = rankScores[rank]
+        //rank must be in brackets because you are using it as a variable and then accessing it in rankScores
         this.title = `${rank} of ${suit}`
         }
 }
@@ -16,3 +17,20 @@ let tenOfHearts = new Card ('hearts', 'ten')
 console.log(tenOfHearts)
 
 module.exports = Card
+
+
+//example of bracket usage
+//var myOjb - {
+//    "a": 1,
+//    "b": 2,
+//    "c": 3,
+//}
+//
+//var myVar = "c";
+//
+//myObj.a = 1
+//my.Obj[a] = 1
+//
+//myObj.myVar // underfined
+//myObj[myVar] = 3
+//myObj["c"] = 3

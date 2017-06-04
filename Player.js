@@ -6,6 +6,9 @@ class Player {
         this.handLength = function() {
             return this.hand.length
         }
+        this.currentCards = []
+            //all the cards that have been drawn
+        
         
         //method for drawing a card
     }
